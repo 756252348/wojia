@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>我嘉服务</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <script src="js/jquery.min.js"></script>  
+  <script src="js/soChange.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="js/type.js"></script>
+  <script src="js/area.js"></script> 
+    <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (min-width:640px)" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:640px)" href="css/phone_style.css">
+
+</head>
+<body class="page_bg">
+
+
+<div class="banner">
+  <h2>我嘉服务</h2>
+  <img src="images/server.jpg" alt="">
+</div>
+<div class="append_inc_top" style="height: 280px;"></div>
+<div class="main"> 
+   <div class="block"> 
+    <div class="contain"> 
+     <div class="contain_content"> 
+      <div class="yuyue" id="01">
+       <div class="customization"> 
+        <!-- <div class="pic"><img src="images/1.png" alt=""></div> -->
+
+        <div class="customization_note">
+          <div class="customization_title" id="01">
+            <div class="topic_title"> 
+        
+         <span>预约定制</span> 
+          <p>Reservation customization</p> 
+        </div> 
+          </div>
+          <div class="con"> 
+            <span style="font-size: 18px;font-weight: 500;color: #333;margin-bottom:12px;margin-top:12px;display:block;">个性化预约定制</span>
+            <div>1、在线预约，你只需要提供一个原型</div>
+              <div>2、设计师量测，精准量测，量身定制符合户型的家具</div>
+              <div>3、3D效果图设计，全景呈现未来家居零风险、零担忧</div>  
+              <div>4、生产加工，一体化加工，专业的技术专业的加工模式</div>
+              <div>5、送货安装，专业安装技术，品牌承诺后顾无忧 </div>
+              <div>6、售后无忧，客服24小时在线随时随地为您服务</div>
+           </div>
+        </div>
+         <div class="customization_form"> 
+          <form name="feedbackActionForm" > 
+           <div class="full_ipt"> 
+            <p class="erro"></p> 
+            <span>姓名：</span> 
+            <input type="text" name="feedback_name1" id="feedback_name1" maxlength="100" value="" /> 
+           </div> 
+           <div class="full_ipt"> 
+            <p class="erro"></p> 
+            <span>手机：</span> 
+            <input type="text" name="feedback_name2" id="feedback_name2" maxlength="100" value="" /> 
+           </div> 
+            <div class="full_ipt" id="show">
+          <p class="erro"></p>
+          <select id="province" onChange="changeSelect(this);">
+            <option value="" selected>请选择省</option>
+          </select>
+          <select id="city" onChange="changeSelect(this);" class="mlr">
+            <option value="" selected>请选择市</option>
+          </select>
+          <select id="area">
+            <option value="" selected>请选择区</option>
+          </select>
+          <div class="clear"></div>
+        </div>
+           <div class="clear"></div> 
+           <div class="full_ipt">
+            <a class="submit" onclick="return check();">提交</a>
+           </div> 
+           <div class="clear"></div> 
+          </form>
+         </div> 
+         <div class="clear"></div> 
+        </div> 
+      </div>
+      <div class="yuyue" id="02">
+        <div class="topic_title">           
+          
+          <span>客户见证</span>  
+          <p>Customer Testimonials</p>
+        </div>
+        <div class="gridalicious">  
+        <div class="itemList">
+          <div class="item">
+            <img src="http://www.macio.com.cn/kps01/M00/47/81/wKiAiVmdRdmpFGqLAACSmMZo1EA113.jpg" alt="">
+          </div>
+           <p>我为我嘉代言</p>
+           </div>   
+           <div class="itemList">
+             
+          <div class="item">
+            <img src="http://www.macio.com.cn/kps01/M00/47/81/wKiAiVmdRdmpFGqLAACSmMZo1EA113.jpg" alt="">
+            
+          </div>
+          <p>我为我嘉代言</p>
+
+           </div>
+           <div class="itemList">
+             
+          <div class="item">
+            <img src="http://www.macio.com.cn/kps01/M00/47/81/wKiAiVmdRdmpFGqLAACSmMZo1EA113.jpg" alt="">
+            
+          </div>
+          <p>我为我嘉代言</p>
+          
+           </div>
+           <div class="itemList">
+             
+          <div class="item">
+            <img src="http://www.macio.com.cn/kps01/M00/47/81/wKiAiVmdRdmpFGqLAACSmMZo1EA113.jpg" alt="">
+            
+          </div>
+          <p>我为我嘉代言</p>
+          
+           </div>
+        </div>
+      </div>
+      <div class="yuyue" id="03">
+        <div class="topic_title">           
+          <span>售后服务</span>  
+          <p>Contact Us</p>
+        </div>
+
+        
+        <ul class="service_column">
+          <div class="ldiv on" id="0" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkGIG1odLBAAAT5onNV8E262.png"/><img class="bpic" src="images/wKiAiVkkGIGKXpPyAAAQ7E5FAQU116.png"/></div>
+            <div class="desc">免费量尺</div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="1" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkGJbNtWU7AAAXN26XoAA088.png"/><img class="bpic" src="images/wKiAiVkkGJbz0RygAAAU_-eJya8266.png"/></div>
+            <div class="desc">免费设计<br></div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="2" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkGLjV-kdyAAAStitGYEk939.png"/><img class="bpic" src="images/wKiAiVkkGLjkJJoTAAAPHzd0Di4109.png"/></div>
+            <div class="desc">24个月质保</div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="3" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkH4TfwuE1AAASCovi5_A397.png"/><img class="bpic" src="images/wKiAiVkkH4Surs-UAAAOq_16JIk158.png"/></div>
+            <div class="desc">终身维护</div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="4" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkH52h2ToLAAAQHaJLuHg765.png"/><img class="bpic" src="images/wKiAiVkkH53qkkW_AAAMLro8qto463.png"/></div>
+            <div class="desc">安装后免费清洁</div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="5" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkGNPeCfXZAAARn7EVc2o217.png"/><img class="bpic" src="images/wKiAiVkkH0mSIE6nAAAOEBRqBus655.png"/></div>
+            <div class="desc">免费安装</div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="6" >
+            <div class="pic"><img class="spic" src="images/wKiAiVkkH7auvNtmAAASmuEYt_4755.png"/><img class="bpic" src="images/wKiAiVkkH7b_dcrzAAAPJJ3UVwM027.png"/></div>
+            <div class="desc">VIP客户微信专属服务</div>
+          </div>
+          <div class="rarrow"></div>
+          
+          <div class="ldiv " id="7" >
+            <div class="pic"><img class="spic" src="images/wKiAiVk6Tp74j9NXAAARq6g9ILs991.png"/><img class="bpic" src="images/wKiAiVk6Tp3WJdP-AAAQo3WHkJY216.png"/></div>
+            <div class="desc">确保正品<br></div>
+          </div>
+          
+          <div class="clear"></div>
+        </ul>
+         <div class="service_note" ><br>
+<p><span style="font-size: 10.5pt;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10.5pt;">我嘉将为您提供免费的专业设计师上门量房设计服务，您可以通过以下3种办法（电话预约、在线咨询预约、在线申请预约）进行预约。预约成功之后我嘉将安排设计师上门量房，为您提供“上门量房+家具配套设计+全屋家私估价”全套服务!&nbsp;</span></p>
+<p><span style="font-size: 10.5pt;"><br>
+</span></p>
+<p style="color: rgb(197, 163, 110); font-weight: bold; margin-top: 12px;"><span style="font-size: 10.5pt;">&nbsp; &nbsp; &nbsp; <span style="font-size: 12pt;">预约免费上门量尺设计的3种办法：</span></span></p>
+<p></p>
+<p style="margin-top: 10px;"><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(197, 163, 110); font-size: 14px; font-weight: bold; background-color: rgb(255, 255, 255);">&nbsp;</span><span style="font-weight: bold;"><span style="color: rgb(197, 163, 110); font-size: 14px; background-color: rgb(255, 255, 255);"> &nbsp; &nbsp;</span><span class="Apple-converted-space"><span style="font-size: 10.5pt;">&nbsp;</span></span></span></span><span style="font-size: 10.5pt; font-weight: bold;">1、电话预约：</span><span style="font-size: 10.5pt;">直接拨打全国服务热线【</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; font-size: 10.5pt;">400-000-3115</span><span style="font-size: 10.5pt;">】进行预约；</span></p>
+<p><span style="font-weight: bold;"><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 10.5pt;">&nbsp; &nbsp; &nbsp;</span><span class="Apple-converted-space"><span style="font-size: 10.5pt;">&nbsp;</span></span></span><span style="font-size: 10.5pt;">2、在线咨询预约：</span></span><span style="font-size: 10.5pt;">点击右侧小玛头像直接在线咨询预约；</span></p>
+<p><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 10.5pt;">&nbsp; &nbsp;<span style="font-weight: bold;"> &nbsp;</span></span><span class="Apple-converted-space"><span style="font-size: 10.5pt; font-weight: bold;">&nbsp;</span></span></span><span style="font-weight: bold;"><span style="font-size: 10.5pt;">3、</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; font-size: 10.5pt;">在线申请预约</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; font-size: 10.5pt;">：</span></span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; font-size: 10.5pt;">点击上方【</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; font-size: 10.5pt;">预约定制</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; font-size: 10.5pt;">】按钮即可申请预约。</span></p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&nbsp; &nbsp; <span style="font-size: 12pt;">&nbsp; &nbsp;</span></span><b style="font-family: Calibri, sans-serif; font-size: 10.5pt; text-align: justify;"><span style="font-family: 宋体; font-size: 12pt;">免费设计：</span></b><span style="font-size: 10.5pt; text-align: justify;">无需任何费用，我嘉专业设计师根据您家户型为您提供全屋定制方案。</span></p>
+<p><span style="font-size: 10.5pt; text-align: justify;"><br>
+</span></p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">&nbsp;<span style="font-size: 12pt; font-weight: bold;"> &nbsp; &nbsp; &nbsp; </span><span style="font-size: 10.5pt;"><span style="font-size: 12pt; font-weight: bold;">赠送贴心大礼包：</span>我们为我嘉的每一位业主精心准备了一份贴心大礼包。</span></span></p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 10.5pt;"><br>
+</span></span></p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 10.5pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 12pt; font-weight: bold;">&nbsp; &nbsp; &nbsp; 免费送货免费安装：</span>每笔订单都有专业送货安装团队配送到家，可为您提供免费送货上门，免费安装服务，省心又省力。</span></p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br>
+</span></p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 10.5pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 12pt; font-weight: bold;">&nbsp; &nbsp; &nbsp; &nbsp;36个月质保终身维护：</span>自安装日算起，我嘉为您提供“36个月质保期”和“终身维护”服务，确保您后期使用无忧。</span><br>
+</p>
+<p><br>
+</p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">&nbsp; &nbsp;<span style="font-size: 10.5pt;"> &nbsp; <span style="font-size: 12pt; font-weight: bold;">&nbsp;</span></span><span style="font-size: 10.5pt;"><span style="font-size: 12pt; font-weight: bold;">安装后免费清洁：</span>安装完之后我嘉为您提供免费的专业清洁服务，让您住得舒心。</span></span></p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 10.5pt;"><br>
+</span></span></p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">&nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10.5pt;"><span style="font-weight: bold; font-size: 12pt;">VIP客户微信专属服务：</span>每一位我嘉的业主都是我们的贵宾VIP，可享受“我嘉定制家居”微信公众号小玛客服的专属服务，或者您在使用过程中有遇到任何问题，请联系全国免费服务专线：400-000-3115，我们将诚挚为您服务。</span></span></p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 10.5pt;"><br>
+</span></span></p>
+<p style="text-align: center;"><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-size: 10.5pt;"><img border="0" src="http://images02.cdn86.net/kps01/M00/3A/88/wKiAiVlWD3PGfNLCAAC5zYKb4IQ237.jpg"><br>
+扫一扫，关注我嘉官方微信<br>
+<br>
+</span></span></p>
+<p style="text-align: center;"></p></div>
+ <div class="service_note" style="display:none"><p><br>
+</p>
+<p><span style="color: rgb(85, 85, 85); font-family: 微软雅黑; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">&nbsp; &nbsp; &nbsp;<span style="font-weight: bold;"><span style="font-size: 12pt;"> </span><span style="font-size: 10.5pt;"><span style="font-size: 12pt;">&nbsp; </span></span></span><span style="font-size: 10.5pt;"><span style="font-size: 12pt; font-weight: bold;">确保正品：</span>我嘉的每款产品都带防伪验证码，由专业质检员检查质量和做工，保证品质，您可致电全国免费服务专线电话：400-000-3115查询订单，确保正品。同时您也可以登录<span style="text-decoration-line: underline; font-weight: bold;"><a href="http://www.zhengpin.so" target="_blank"><span style="font-size: 12pt;">中国家居正品查询平台</span></a></span>，输入产品标签上的“防伪码”，可验证正品。</span></span><br>
+</p>
+<p style="text-align: center;"><br>
+</p>
+<p style="text-align: center;"><img border="0" src="http://images02.cdn86.net/kps01/M00/3A/87/wKiAiVlWC3jhdaYqAAAqdVzYzm0096.jpg"><br>
+<br>
+<br>
+</p></div>
+      <script>
+
+            $('.service_column div.ldiv').click(function(){
+
+              $(this).addClass('on').siblings('.ldiv').removeClass('on');
+
+              $('.service_note').eq($(this).attr('id')).show().siblings('.service_note').hide();  
+
+            });
+
+
+            </script> 
+      
+      
+
+
+
+
+
+
+
+
+      </div>
+       
+     </div> 
+    </div> 
+   </div> 
+  </div>
+
+
+
+
+
+
+ 
+      <script language="javascript">
+
+function check(){
+
+  $('.erro').html("");
+
+  $('input').attr("placeholder","");
+
+  if(document.getElementById("feedback_name1").value==""){
+
+    $('#feedback_name1').val('').attr("placeholder","姓名不能为空!");
+
+    document.getElementById("feedback_name1").focus();
+
+    return false;
+
+  }
+
+  if(document.getElementById("feedback_name2").value==""){
+
+    $('#feedback_name2').val('').attr("placeholder","请输入手机号码!");
+
+    document.getElementById("feedback_name2").focus();
+
+    return false;
+
+  }
+
+  if(!(/^1[34578]\d{9}$/.test(document.getElementById("feedback_name2").value))){
+
+        $('#feedback_name2').val('').attr("placeholder","请输入11位正确手机号码!");
+
+      document.getElementById("feedback_name2").focus();
+
+      return false;
+
+  }
+
+  if(document.getElementById('province').value=='' || document.getElementById('city').value==''){
+
+    $('#show').find('.erro').html('请选择您所在省市区');
+
+    return false;
+
+  }
+
+  document.getElementById("feedback_name3").value=$('#province').children('option:selected').html()+" "+$('#city').children('option:selected').html()+" "+$('#area').children('option:selected').html();
+
+  document.feedbackActionForm.submit();//提交
+
+  return true;
+
+}
+
+</script> 
+
+</body>
+</html>

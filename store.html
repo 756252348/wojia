@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>全国线下门店</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/soChange.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="js/type.js"></script>
+        <style>
+    .net_con{ background:#ffffff;  text-align:left;overflow:hidden;} 
+    .net_left{ width:320px;float:left;}
+    .net_left .title{font-size:18px;letter-spacing:2px;padding:0 0 10px 20px;display:none;}
+    .net_left .title b{color:#c5a36e;}
+    .ser_btn2{display:block;width:100px;padding-left:15px;height:38px;float:left;text-align:center;color:#fff;font-size:14px;line-height:38px;margin-left:13px;background:#bf9d5a url(images/ser_btn2.png) no-repeat 26px center;}
+    .search_line{height:40px; line-height:38px; position:relative;margin-bottom:20px;}
+    .search_line input[type="text"]{float:left;background:none;border:solid 1px #ccc;text-indent:10px;width:310px; height:38px;line-height:38px;color:#333;}
+    .search_line select{float:left;width:320px;text-align:center;text-indent:10px;border:solid 1px #ccc;margin-right:20px;padding:10px;appearance: none; -moz-appearance: none;-webkit-appearance: none;background: url(images/select_dot.png) no-repeat scroll right center transparent;}
+    .net_right{border-bottom:solid 1px #ddd;overflow:hidden;float:right;width:782px;height:635px;}
+    .net_line{border-bottom:solid 1px #ddd;color:#111;font-size:14px;line-height:20px;padding:10px 0 10px 20px;}
+    .net_line .div_line_name{line-height:26px;font-size:16px;font-weight:bold;}
+    a:hover .net_line{color:#c5a36e;background:#fafafa;}
+    a.on .net_line{color:#c5a36e;background:#fafafa;}
+    .gun_div{ height:635px; overflow-y:scroll;}
+    .ser_btn2:hover{
+      background-color: #ca9d44;
+      color: #fff;
+    }
+    /*滚动条样式*/
+    .net_con ::-webkit-scrollbar{width:5px;height:5px;}
+    .net_con ::-webkit-scrollbar-track{border-radius: 0px;background:#ccc;}
+    .net_con ::-webkit-scrollbar-thumb{border-radius:5px;background:#c5a36e;}
+    .net_con ::-webkit-scrollbar-thumb:hover{border-radius:5px;background:#c5a36e;}
+    #message-center{display:none !important;}
+    </style>
+      <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (min-width:640px)" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:640px)" href="css/phone_style.css">
+
+</head>
+<body class="page_bg">
+
+<!-- header -->
+<div class="banner">
+  <h2>全国线下门店</h2>
+  <img src="tpl/wKiAiVpZocf3Cl_IAAWrqqdP5Jw725.jpg" alt="">
+</div>
+  <div class="append_inc_top"></div>
+<!-- headerend -->
+<!-- 内容 -->
+<div class="main">
+  <div class="block">
+    <div class="contain">
+      <div class="contain_content">
+        <div class="p_title">查找全国授权线下体验店！</div>
+
+        <div class="net_con">
+          <form action="store.html" method="post" name="searchForm1">
+            <div class="search_line">
+              <select id="sheng" name="sheng"><option value="">请选择省份</option><option value="0">重庆市</option><option value="1">四川省</option><option value="2">北京市</option><option value="3">天津市</option><option value="4">上海市</option><option value="5">广东省</option><option value="6">江苏省</option><option value="7">浙江省</option><option value="8">山东省</option><option value="9">河北省</option><option value="10">河南省</option><option value="11">安徽省</option><option value="12">湖北省</option><option value="13">湖南省</option><option value="14">江西省</option><option value="15">福建省</option><option value="16">山西省</option><option value="17">广西壮族自治区</option><option value="18">内蒙古自治区</option><option value="19">青海省</option><option value="20">吉林省</option><option value="21">黑龙江省</option><option value="22">辽宁省</option><option value="23">宁夏回族自治区</option><option value="24">陕西省</option><option value="25">甘肃省</option><option value="26">新疆维吾尔自治区</option><option value="27">贵州省</option><option value="28">云南省</option><option value="29">海南省</option></select>
+              <select id="city" name="city"><option value="">请选择市区</option></select>
+              <input name="keyword" type="text" id="keyword" placeholder="根据关键字查询">
+              <a class="ser_btn2">搜索</a>
+              <div class="clear"></div>
+            </div>
+            <div class="net_left">
+              <div class="title result">搜索到<b> 546 </b>家</div>
+              <div class="gun_div">
+                 <a href="javascript:void(0);" onclick="openWindow('http://map.baidu.com/?l=&s=s%26wd%3D%E9%87%8D%E5%BA%86%E5%B8%82%E6%B1%9F%E5%8C%97%E5%8C%BA%E5%86%89%E5%AE%B6%E5%9D%9D%E7%BA%A2%E6%98%9F%E7%BE%8E%E5%87%AF%E9%BE%99%E5%BA%972F-C8159',this)">
+                <div class="net_line">
+                  <div class="div_line_name">我嘉全屋定制体验店</div>
+                  <div class="div_line_address">上海市嘉定区胜辛南路129号-C8159</div>
+                  <div class="div_line_tel">400-9219-808</div>
+                </div>
+                </a>  </div>
+            </div>
+            <div class="net_right">
+              <iframe scrolling="no" frameborder="0" height="100%" width="100%" src="http://api.map.baidu.com/geocoder?output=html" id="frame" name="frame"></iframe>
+            </div>
+            <div class="clear"></div>
+          </form>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 内容end -->
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <script src="js/jquery.min.js"></script> 
+  <link rel="stylesheet" href="css/style.css" /> 
+  <script src="js/soChange.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="js/type.js"></script>
+</head>
+<body>
+  <!-- 头部 -->
+<div class="toper"> 
+   <div class="top"> 
+    <div class="block"> 
+     <div class="float-left m_logo">
+       欢迎进入我嘉全屋定制官网！ 
+     </div> 
+     <div class="float-right"> 
+      <a href="store.html"> 
+       <div class="outline_store">
+         全国线下门店 
+       </div></a> 
+      <a href="#" target="_blank"> 
+       <div class="online_shop">
+         天猫旗舰店 
+       </div></a> 
+      <div class="ser"> 
+       <form action="products.html" method="post" name="searchForm"> 
+        <div class="ser_con"> 
+         <input type="text" class="Itext" name="keyword" onfocus="if (this.value=='')this.value=''" onblur="if (this.value=='')this.value=''" value="" /> 
+         <div class="change_ser"> 
+          <span class="on" id="products.html">产品</span> 
+          <span id="news.html">新闻</span> 
+         </div> 
+        </div> 
+        <input type="submit" name="submit" value="" class="ser_btn" /> 
+       </form> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="head"> 
+    <div class="block"> 
+     <div class="logo"> 
+      <table height="100%" width="100%"> 
+       <tbody> 
+        <tr> 
+         <td valign="middle"> <h1> <a href="index.html"><img src="images/logo.png" /></a> </h1> </td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+     <div class="topnav"> 
+      <ul> 
+       <li><a class="on" href="index.html">网站首页</a></li> 
+       <li><a href="introduce.html">企业介绍</a> 
+        <dl> 
+         <dd> 
+          <a href="introduce.html#01">企业概况</a> 
+         </dd> 
+         <dd> 
+          <a href="introduce.html#02">品牌荣誉</a> 
+         </dd> 
+         <dd> 
+          <a href="introduce.html#3">设备工艺</a> 
+         </dd> 
+         <dd> 
+          <a href="introduce.html#04">合作伙伴</a> 
+         </dd> 
+         <dd> 
+          <a href="recruitment.html">人才招聘</a> 
+         </dd> 
+        </dl> </li> 
+       <li><a href="products.html">产品中心</a> 
+        </li> 
+       <li><a href="cases.html">实景案例</a> 
+        <dl> 
+         <dd> 
+          <a href="cases.html">展厅案例</a> 
+         </dd> 
+         <dd> 
+          <a href="cases.html">客户案例</a> 
+         </dd> 
+        </dl> </li> 
+       <li><a href="service.html">我嘉服务</a> 
+        <dl>  
+         <dd> 
+          <a href="service.html">预约定制</a> 
+         </dd> 
+         <dd> 
+          <a href="service.html">客户见证</a> 
+         </dd> 
+         <dd> 
+          <a href="service.html">售后服务</a> 
+         </dd> 
+        </dl> </li> 
+       <li><a href="join.html">品牌加盟</a> 
+       <dl>  
+         <dd> 
+          <a href="service.html#01">预约定制</a> 
+         </dd> 
+         <dd> 
+          <a href="service.html#02">客户见证</a> 
+         </dd> 
+         <dd> 
+          <a href="service.html#03">售后服务</a> 
+         </dd> 
+        </dl> </li> 
+       <li><a href="news.html">最新资讯</a> 
+        <dl> 
+         <dd> 
+          <a href="news.html">公司新闻</a> 
+         </dd> 
+         <dd> 
+          <a href="news.html">产品资讯</a> 
+         </dd> 
+         <dd> 
+          <a href="news.html">装修向导</a> 
+         </dd> 
+        </dl> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div>
+    <!-- 头部end -->
+    
+
+    
+
+<!-- 悬浮 -->
+<div class="flow_window">
+  <div class="flow_icon"></div>
+  <ul>
+    <li class="ficon1" onclick="kefu()"></li>
+    <li class="ficon2">
+      <div class="par">
+        400-000-3115 </div>
+    </li>
+     <a href="service.html?typeid=2335425">
+    <li class="ficon3"></li>
+    </a> 
+    <li class="ficon4">
+      <div class="par">
+        <img src="tpl/wKiAiVk2ntTrTwBWAACceW_HBf8281.jpg"/></div>
+    </li>
+  </ul>
+</div>
+<div class="ficon_top"></div>
+
+<!-- 悬浮end -->
+
+
+
+
+
+<!-- 底部 -->
+<div class="clear"></div> 
+  <div class="footer"> 
+   <div class="block"> 
+    <ul> 
+     <div class="tit">
+      企业介绍
+     </div> 
+     <li><a href="introduce.html#01">企业概况</a></li> 
+     <li><a href="introduce.html#2">品牌荣誉</a></li> 
+     <li><a href="introduce.html#03">设备工艺</a></li> 
+     <li><a href="introduce.html#04">合作伙伴</a></li> 
+     <li><a href="recruitment.html">人才招聘</a></li> 
+    </ul> 
+    <ul> 
+     <div class="tit">
+      实景案例
+     </div> 
+     <li><a href="case.html">展厅案例</a></li> 
+     <li><a href="tcase.html">客户案例</a></li>
+    </ul> 
+    
+    <ul> 
+     <div class="tit">
+      我嘉服务
+     </div> 
+     <li><a href="service.html">预约定制</a></li> 
+     <li><a href="service.html">金玛保养</a></li> 
+     <li><a href="service.html">客户见证</a></li> 
+     <li><a href="service.html">联系我们</a></li> 
+    </ul> 
+    <ul> 
+     <div class="tit">
+      品牌加盟
+     </div> 
+     <li><a href="join.html#01">品牌优势</a></li> 
+     <li><a href="join.html#04">加盟支持</a></li> 
+     <li><a href="join.html#06">加盟流程</a></li> 
+    </ul> 
+    <ul> 
+     <div class="tit">
+      最新资讯
+     </div> 
+     <li><a href="news.html">公司新闻</a></li> 
+     <li><a href="news.html">产品资讯</a></li> 
+     <li><a href="news.html">装修向导</a></li> 
+    </ul> 
+    <ul class="ul_ct"> 
+     <div class="hotline">
+       全国免费服务热线：
+      <br /> 
+      <b>400-000-3115</b> 
+     </div> 
+     <div class="ewm1"> 
+      <img src="tpl/wKiAiVk2kQyjowipAAAkqlbnF-g520.png" /> 
+      <p>官方微信</p> 
+     </div> 
+     <div class="ewm2"> 
+      <img src="tpl/wKiAiVk2kSS9vUgPAAAdm1NHV3E517.png" /> 
+      <p>官方微博</p> 
+     </div> 
+     <div class="clear"></div> 
+    </ul> 
+    <div class="clear"></div> 
+   </div> 
+  </div> 
+  <div class="frlink"> 
+   <div class="block"> 
+    <ul> 
+     <span>友情链接：</span> 
+     <a href="#" target="_blank">淘宝</a>
+     <font>|</font> 
+     <a href="#" target="_blank">武汉装修</a>
+     <font>|</font> 
+     <a href="#" target="_blank">广州定制家居展</a> 
+     <div class="clear"></div> 
+    </ul> 
+   </div> 
+  </div> 
+  <div class="bottom"> 
+   <div class="block"> 
+    <div class="copyright">
+     Copyright &copy; 2017 广东玛格家居有限公司. All Rights Reserved.&nbsp;
+    </div> 
+   </div> 
+  </div>
+<!-- 底部end -->
+
+
+</body>
+</html>

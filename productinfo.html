@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>产品中心</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/soChange.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="js/type.js"></script>
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (min-width:640px)" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:640px)" href="css/phone_style.css">
+
+</head>
+<body class="page_bg">
+<div class="banner">
+  <h2 >产品中心</h2>
+  <img src="images/pro.jpg" alt="">
+</div>
+  <div class="append_inc_top"></div>
+  <div class="main">
+  <div class="block">
+    <div class="contain">
+  
+     <div class="contain_content">
+         <div class="dis_pro"> 
+   <div class="dis_pro_left"> 
+    <div class="bd"> 
+     <a class="prev" style="display: none;"></a>
+     <a class="next" style="display: none;"></a> 
+     <div class="tempWrap ">
+      <ul style="">
+       <li class="clone"><img src="tpl/pro1.jpg" /></li> 
+       <li class="clone"><img src="tpl/pro1.jpg" /></li> 
+       <li class="clone"><img src="tpl/pro1.jpg" /></li> 
+      </ul>
+     </div> 
+    </div> 
+    <div class="hd"> 
+     <li><img src="tpl/pro1.jpg" /></li> 
+      <li><img src="tpl/pro1.jpg" /></li> 
+       <li><img src="tpl/pro1.jpg" /></li> 
+    </div> 
+   </div> 
+   <div class="dis_pro_right"> 
+    <h1>
+     <div class="pro_name">
+      入户柜
+     </div></h1> 
+    <div class="pro_desc">
+      苏格拉底，古希腊著名的思想家、哲学家、教育家，柏拉图的老师，他是极简主义领域的理论启蒙者。 “苏格拉底”系列的产品，用现代板木和时尚铝门为外观表现形式，实木和玻璃金属进行混搭，表现出时尚现代的品质之家。
+    </div> 
+    <div class="pro_para"> 
+     <p><span style="font-family: 黑体; font-weight: bold;">品牌：</span><span style="font-family: 黑体;">我嘉</span><br /> <span style="font-family: 黑体; font-weight: bold;">系列：</span><span style="font-family: 黑体;">苏格拉底</span><br /> <span style="font-family: 黑体; font-weight: bold;">定位：</span><span style="font-family: 黑体;">时尚、品质</span></p> 
+     <p><span style="font-family: 黑体; font-weight: bold;">风格：</span><span style="font-family: 黑体;">极简风格</span></p> 
+     <p><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; font-family: 黑体; font-weight: bold;">木种：</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; font-family: 黑体;">胡桃木、榉木</span><br /> </p> 
+     <p><span style="font-family: 黑体; font-weight: bold;">颜色：</span><span style="font-family: 黑体;">门板玻璃颜色-磨白、雅灰、水晶灰、磨黑、磨白【透】、黑玻【透】 <br /> &nbsp; &nbsp; &nbsp; 岩板玻璃颜色-火山烟、火山灰 </span><span style="font-family: 黑体;"><br /> </span></p> 
+     <p><span style="font-family: 黑体; orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial; font-weight: bold;">空间：</span><span style="orphans: 2; text-align: start; text-indent: 0px; widows: 2; text-decoration-style: initial; text-decoration-color: initial;">全屋</span><br /> </p> 
+    </div> 
+   </div> 
+   <div class="clear"></div> 
+   <div class="dis_pro_bot"> 
+    <div class="dis_bot_title">
+     <span class="on">详情介绍</span>
+    </div> 
+    <div class="dis_bot_con"> 
+     <p style='font-size: 14px;
+    line-height: 30px;'>详情介绍</p>
+     <img src="tpl/pro1.jpg" />
+    </div> 
+   </div> 
+  </div>
+
+     </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+jQuery(".dis_pro_left").slide({ mainCell:".bd ul",titCell:".hd ul",effect:"leftLoop",vis:1,mouseOverStop:false,autoPlay:true,autoPage:false});
+
+$('.dis_pro_left .bd').hover(function(){
+
+  $(this).find('a').stop(true,true).fadeIn(300);
+
+},function(){
+
+  $(this).find('a').stop(true,true).fadeOut(300);
+
+});
+
+</script>
+
+</body>
+</html>
