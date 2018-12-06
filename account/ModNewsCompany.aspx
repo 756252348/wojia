@@ -462,8 +462,13 @@
                 var _this = $(this);
                 $('#txt_tj').val(_this.val());
             });
+            if ($("#pro_img").val()!="") {
+                $.each($("#pro_img").val().split('|'), function (i) {
 
-
+                    _html += '<div class="news-img"><div class="img-del"><img src="/images/set-img-del.png" class="new-upload set-del-img" data-img="' + $("#pro_img").val().split('|')[i] + '"/></div><img src="../UploadFile/images/' + $("#pro_img").val().split('|')[i] + '" alt="" class="set-up-img"/></div>';
+                });
+                $("#imgup").prepend(_html);
+            }
 
             //修改信息
             var _id = getQueryString("id");//获取id
