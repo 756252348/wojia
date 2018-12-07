@@ -24,7 +24,7 @@ public partial class news : System.Web.UI.Page
                type = string.IsNullOrEmpty(Request["type"]) ? " and type=1" : " and type=" + Request["type"],
                keywords = string.IsNullOrEmpty(Request["keywords"]) ? "" : " and title like '%" + Request["keywords"] + "%'";
         DataTable dt = new DataTable();
-        dt = dp.C_Pagination(new string[] { PageIndex, "20", "id,title,Img,decsriptor,addtime", "News_info", " tag=0" + type + keywords, "ID DESC" }, ref RecordCount, ref PageCount);
+        dt = dp.C_Pagination(new string[] { PageIndex, "6", "id,title,Img,decsriptor,addtime", "News_info", " tag=0" + type + keywords, "ID DESC" }, ref RecordCount, ref PageCount);
         string _html = string.Empty;
         for (int i = 0; i < dt.Rows.Count; i++)
         {

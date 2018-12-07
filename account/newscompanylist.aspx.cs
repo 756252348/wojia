@@ -22,7 +22,7 @@ public partial class account_newscompanylist : System.Web.UI.Page
                PageCount = "0",
                PageIndex = _Page == 0 ? Common.Q_Int("Page", 0).ToString() : _Page.ToString();
 
-        WebControl.CreatTable(showTable, "id,title,addtime", "编号,新闻标题,添加时间", dp.C_Pagination(new string[] { PageIndex, "50", "id,title,addtime", "News_info", " tag=0 and type=1", "ID DESC" }, ref RecordCount, ref PageCount), "ModNewsCompany.aspx?id=", "goods", true);
+        WebControl.CreatTable(showTable, "id,title,addtime", "编号,新闻标题,添加时间", dp.C_Pagination(new string[] { PageIndex, "50", "id,title,CONVERT(varchar(10),addtime, 120) as addtime", "News_info", " tag=0 and type=1", "ID DESC" }, ref RecordCount, ref PageCount), "ModNewsCompany.aspx?id=", "goods", true);
         paging.InnerHtml = WebControl.Pagination(Common.S_Int(PageIndex), Common.S_Int(RecordCount), Common.S_Int(PageCount));
     }
 }
