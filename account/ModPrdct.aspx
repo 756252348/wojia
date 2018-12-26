@@ -542,6 +542,14 @@
                 $('#txt_tj').val(_this.val());
             });
 
+            if ($("#pro_img").val() != "") {
+                   var _html = '';
+                $.each($("#pro_img").val().split('|'), function (i) {
+
+                    _html += '<div class="news-img"><div class="img-del"><img src="/images/set-img-del.png" class="new-upload set-del-img" data-img="' + $("#pro_img").val().split('|')[i] + '"/></div><img src="../UploadFile/images/' + $("#pro_img").val().split('|')[i] + '" alt="" class="set-up-img"/></div>';
+                });
+                $("#imgup").prepend(_html);
+            }
 
 
             //修改信息
@@ -579,7 +587,7 @@
 
                                     _html += '<div class="news-img"><div class="img-del"><img src="/images/set-img-del.png" class="new-upload set-del-img" data-img="' + dt.data10.split('|')[i] + '"/></div><img src="../UploadFile/images/' + dt.data10.split('|')[i] + '" alt="" class="set-up-img"/></div>';
                                 });
-                                $("#imgup").prepend(_html);
+                               // $("#imgup").prepend(_html);
                             }
                             
                             $('.news-img').mouseenter(function () {
